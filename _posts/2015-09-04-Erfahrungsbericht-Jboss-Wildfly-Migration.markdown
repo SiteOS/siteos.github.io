@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Erfahrungsbericht JBoss->WildFly Migration"
-categories: JBoss, Wildfly, JavaEE, Java
+categories: JBoss Wildfly JavaEE, Java
 ---
 SiteOS hat bei mehreren Bestandsanwendungen (Projekte und Produkten) eine Migration von „JBoss AS FINAL 7.1.1 Community Edition“
  nach WildFly 8.2.0.Final durchgeführt. Dieser Artikel ist keine HowTo-Anleitung für eine Migration, sondern beschreibt 
