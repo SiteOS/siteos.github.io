@@ -3,7 +3,6 @@ layout: post
 title: "Earned Value Analyse - oder: Wissen statt glauben im Projektcontrolling"
 description: "Teil 1: Ut vales Projekt? - Ermittlung des aktuellen Projektstatus mit Hilfe der Earned Value Analyse"
 categories: Web
-excerpt_separator: <!--more-->
 ---
 Stellen Sie sich vor, Ihr einjähriges Projekt läuft bereits seit sechs Monaten, 50% der Aufgaben sind erledigt und erst 40% des Budgets sind verbraucht.
 Sie freuen sich zunächst über die guten Zahlen - aber drei Monate später ist das Budget fast aufgebraucht und es stehen noch zahlreiche Aufgaben an.
