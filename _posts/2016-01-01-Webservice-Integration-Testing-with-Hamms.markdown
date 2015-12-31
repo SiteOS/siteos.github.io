@@ -10,7 +10,7 @@ Vor kurzem las ich im Java Magazin *11/2015* den Artikel **Fundierte Entscheidun
  immer auch die Architektur, die sich im Service Layer zumeist in Backend- und Integration-Layer unterteilen lässt, wie in 
  Abbildung 1 aufgezeigt wird.
  
-<p align="center"><img src="{{site.baseurl}}/images/2015-12-21-hamms_design.png"/></p>
+<p align="center"><img src="{{site.baseurl}}/images/2016-01-01-hamms_design.png"/></p>
   
 Der **Backend-Layer** und der **Application Error Catalogue** werden dabei oft mit Unit und Integrationstest abgetestet, was sich im 
 Java/JavaEE Umfeld durch z.B. [JUnit](www.junit.org) und [Arquillian](www.arquillian.org) manifestiert. Auch der **Integration-Layer**
@@ -91,7 +91,7 @@ public class HammsRuleIT {
     }
 }{%endhighlight%}
 
-<p align="center"><img src="{{site.baseurl}}/images/2015-12-21-hamms.png"/></p>
+<p align="center"><img src="{{site.baseurl}}/images/2016-01-01-hamms.png"/></p>
 
 Das Repository stellt zusätzlich auch zwei Skripte zur Verfügung, mit denen Hamms gestartet bzw. gestoppt werden kann. Damit ist es 
 möglich, *Hamms* über z.B. Maven mit dem **exec-maven-plugin** automatisiert in den Softwarezyklus zu hängen. Folgende *pom.xml* zeigt
