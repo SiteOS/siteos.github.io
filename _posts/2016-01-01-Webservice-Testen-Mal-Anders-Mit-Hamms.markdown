@@ -2,7 +2,7 @@
 layout: post
 author: Alexander Bischof
 authorkey: alexanderbischof
-title: "Webservice Integration Testing mit Hamms"
+title: "Webservice Testen mal anders mit Hamms"
 categories: Testing, HTTP, Microservice, Hamms
 ---
 Vor kurzem las ich im Java Magazin *11/2015* den Artikel **Fundierte Entscheidungen treffen können**, in dem 
@@ -17,8 +17,8 @@ Java/JavaEE Umfeld durch z.B. [JUnit](www.junit.org) und [Arquillian](www.arquil
 ist in vielen Projekten fachlich gut durch z.B. Akzeptanztests abgetestet. Aber was macht man eigentlich mit dem dazugehörigen 
 **Service Error Catalogue**?   
 Meiner Erfahrung nach ist er in vielen Projekten gar nicht vorhanden, was z.T. aber auch daran liegt, dass dieser technologieabhängig ist. 
-Zum Beispiel wird dieser bei einer EJB-Remote Schnittstelle deutlich anders aussehen, als bei einem ReST-Service. Aber schaut man z.B. auf einen
-integrierten ReST-Service, so ist vielen auch gar nicht bewusst, was zwischen einem HTTP-Client und einem -Server alles schiefgehen kann. Dass das
+Zum Beispiel wird dieser bei einer EJB-Remote Schnittstelle deutlich anders aussehen, als bei einem ReST-Service. Aber schaut man z.B. auf
+ Webservices, so ist vielen auch gar nicht bewusst, was zwischen einem HTTP-Client und einem -Server alles schiefgehen kann. Dass das
 aus Komplexitätsgründen z.T. für die Entwicklung gewollt ist, sollte jedem klar sein. Möchte man sein System jedoch richtig kennen, wird man um
 das Vorhandensein und das Testen eines **Service Error Catalogues** nicht herumkommen. Wie das
  mittels [**Hamms**](https://github.com/kevinburke/hamms) im Java-Umfeld erfolgen kann, wird im weiteren Artikel gezeigt.
@@ -129,3 +129,10 @@ sind. Im Notfall müsste man *Hamms* dann doch händisch stoppen.
 {%endhighlight%}
 
 Obiges Beispiel befindet sich wie immer in meinem [Github-Repository](https://github.com/AlexBischof/hammsrule). 
+
+### Fazit
+
+Webservices (und dadurch auch der Service Error Catalogue) lassen sich gut hinsichtlich Http-Client Errors testen, 
+was die Analysierbarkeit und das Verständnis des Systems erhöht.
+Dabei lassen sich Tests durch z.B. obige JUnit-Rule einfach und schnell schreiben und auch in 
+den kompletten Softwarecycle mit Maven einbinden. 
