@@ -3,7 +3,7 @@ layout: post
 author: Alexander Bischof
 authorkey: alexanderbischof
 title: "Webservice Testen mal anders mit Hamms"
-categories: Testing, HTTP, Microservice, Hamms
+categories: Testing HTTP Microservice Hamms
 ---
 Vor kurzem las ich im Java Magazin *11/2015* den Artikel **Fundierte Entscheidungen treffen können**, in dem 
  beschrieben wird, worauf man bei analysierbaren Systemen achten kann/sollte. Dabei ist ein wichtiger Bestandteil und Treiber
