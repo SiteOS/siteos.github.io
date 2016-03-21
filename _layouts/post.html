@@ -6,7 +6,7 @@ layout: default
         <header class="major">
             <h2 class="post-title">{{ page.title }}</h2>
 
-            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif%}{% if page.authorkey %} • <img src="{{ site.baseurl }}/images/alexanderbischof.jpg"/>{% endif %}</p>
+            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif%}{% if page.authorkey %} • <img src="{{ site.baseurl }}/images/{{page.authorkey}}.jpg"/>{% endif %}</p>
         </header>
 
         <section class="post-content">

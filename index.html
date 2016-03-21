@@ -14,7 +14,7 @@ layout: default
             <header class="major">
                 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-                <p class="post-meta">{% if post.authorkey %}<img align="middle" src="{{ site.baseurl }}/images/alexanderbischof.jpg" style="width: 50px; height: 50px">
+                <p class="post-meta">{% if post.authorkey %}<img align="middle" src="{{ site.baseurl }}/images/{{post.authorkey}}.jpg" style="width: 50px; height: 50px">
                     {% endif %}{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif%}
                     </img>
                 </p>
