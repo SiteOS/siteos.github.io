@@ -17,13 +17,13 @@ Das Kernproblem ist hier, dass die Anzahl der erledigten Aufgaben mit dem Fertig
 Die Earned Value Analyse (EVA) hilft Ihnen dabei, einen objektiven Blick auf den Projektstatus zu erhalten. Der Earned Value ist hierbei nur eine der vier Basiskennzahlen:
 
  - Budget at Completion (BAC)
-  - Das Gesambudget des Projekts
+   - Das Gesambudget des Projekts
  - Planned Value(PV)
-  - Der Planwert/die Plankosten zum aktuellen Zeitpunkt
+   - Der Planwert/die Plankosten zum aktuellen Zeitpunkt
  - Actual Costs (AC)
-  - Die Ist-Kosten zum aktuellen Zeitpunkt
+   - Die Ist-Kosten zum aktuellen Zeitpunkt
  - Earned Value (EV)
-  - Der Fertigstellungswert der geleisteten Arbeit.
+   - Der Fertigstellungswert der geleisteten Arbeit.
 
 Welche Kennzahlen wurden im o.g. Beispiel verwendet? Richtig: BAC und AC.
 PV und EV lassen sich aus den Angaben über den Projektfortschritt nicht sicher herleiten - somit ist auch keine seriöse Aussage über den Projektstatus möglich.
@@ -49,17 +49,17 @@ Zur Ermittlung des Percent Complete (PC) gibt es verschiedene Ansätze, die indi
 Nachfolgend wird nur eine Teilmenge der etablierten Verfahren aufgelistet, welche i.d.R. bei SW-Pojekten zum Einsatz kommen:
 
  - Schätzung
-  - Die für ein Arbeitspaket verantwortlichen Entwickler schätzen den Fertigstellungsgrad, bzw. den Restaufwand.
-  - Problematisch, da z.B. der Restaufwand oft zu niedrig eingeschätzt wird.
+   - Die für ein Arbeitspaket verantwortlichen Entwickler schätzen den Fertigstellungsgrad, bzw. den Restaufwand.
+   - Problematisch, da z.B. der Restaufwand oft zu niedrig eingeschätzt wird.
  - 0/100-Methode
-  - "Alles oder nichts": Ein begonnenes Arbeitspaket hat einen PC von 0%. Erst nach Fertigstellung wird es mit 100% bewertet.
-  - Sehr vorsichtiger Ansatz, der bei Arbeitspaketen mit großen Unsicherheiten genutzt wird.
+   - "Alles oder nichts": Ein begonnenes Arbeitspaket hat einen PC von 0%. Erst nach Fertigstellung wird es mit 100% bewertet.
+   - Sehr vorsichtiger Ansatz, der bei Arbeitspaketen mit großen Unsicherheiten genutzt wird.
  - 50/50-Methode
-  - Ein begonnenes Arbeitspaket hat einen PC von 50%, nach Abschluss kommen die restlichen 50% hinzu.
-  - Sinnvoll bei Kleinprojekten mit kleinen Arbeitspaketen.
+   - Ein begonnenes Arbeitspaket hat einen PC von 50%, nach Abschluss kommen die restlichen 50% hinzu.
+   - Sinnvoll bei Kleinprojekten mit kleinen Arbeitspaketen.
  - 20/80-Methode
-  - Ein begonnenes Arbeitspaket hat einen PC von 20%, nach Abschluss kommen die restlichen 80% hinzu.
-  - Dieser Ansatz wird häufig in SW-Projekten genutzt.
+   - Ein begonnenes Arbeitspaket hat einen PC von 20%, nach Abschluss kommen die restlichen 80% hinzu.
+   - Dieser Ansatz wird häufig in SW-Projekten genutzt.
 
 Die Fertigstellungsgrade der einzelnen Arbeitspakete werden mit ihren Plankosten multipliziert. Die Summe dieser Einzelkosten ergibt den Earned Value.
 
@@ -73,17 +73,17 @@ Nur aus diesem Gesamtkontext lassen sich nun Schlussfolgerungen für den Projekt
 Basierend auf diesen Kennzahlen werden die nächsten Werte der EVA ermittelt:
 
  - Cost Variance (CV) = EV - AC
-  - Kostenabweichung
-  - Positiv = unter Budget, Negativ = über Budget
+   - Kostenabweichung
+   - Positiv = unter Budget, Negativ = über Budget
  - Schedule Variance (SV) = EV - PV
-  - Planabweichung/Terminabweichung
-  - Positiv = Zeitvorsprung, Negativ = Zeitverzug
+   - Planabweichung/Terminabweichung
+   - Positiv = Zeitvorsprung, Negativ = Zeitverzug
  - Cost Performance Index (CPI) = EV / AC
-  - Kosteneffizienz
-  - Kleiner 1 = negativ, größer 1 = positiv
+   - Kosteneffizienz
+   - Kleiner 1 = negativ, größer 1 = positiv
  - Schedule Performance Index (SPI) = EV / PV
-  - Zeiteffizienz
-  - Kleiner 1 = negativ, größer 1 = positiv
+   - Zeiteffizienz
+   - Kleiner 1 = negativ, größer 1 = positiv
   
 Betrachten wir die konkreten Werte des Projekts:
 
