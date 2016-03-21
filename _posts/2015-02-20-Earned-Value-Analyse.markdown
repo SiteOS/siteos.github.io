@@ -30,13 +30,13 @@ PV und EV lassen sich aus den Angaben über den Projektfortschritt nicht sicher 
 
 Betrachten wir zunächst den Planned Value: Um diesen zu ermitteln, benötigen Sie den geplanten Kostenverlauf über die gesamte Projektlaufzeit. Hierüber können Sie die Plankosten zu einem Stichtag ermitteln.
 
-<img src="{{site.baseurl}}/images/2015-02-20-eva1.png"/>
+<img src="{{site.baseurl}}/images/2015/2015-02-20-eva1.png"/>
 
 Die Plankosten nach sechs Monaten Projektlaufzeit sollten demnach 350.000 € betragen, das Gesamtbudget liegt bei 1,2 Mio. €.
 Es zeigt sich auch deutlich der geplante Kostenanstieg in den Folgemonaten.
 Projezieren wir nun den IST-Kostenverlauf dazu:
 
-<img src="{{site.baseurl}}/images/2015-02-20-eva2.png"/>
+<img src="{{site.baseurl}}/images/2015/2015-02-20-eva2.png"/>
 
 Hier zeigt sich eine deutliche Abweichung vom Plan. Die Kosten zum Stichtag betragen bereits 40% des Gesamtbudgets (480.000 €).
 
@@ -65,7 +65,7 @@ Die Fertigstellungsgrade der einzelnen Arbeitspakete werden mit ihren Plankosten
 
 Erweitern wir nun exemplarisch unsere Auswertung um einen Earned Value-Verlauf:
 
-<img src="{{site.baseurl}}/images/2015-02-20-eva3.png"/>
+<img src="{{site.baseurl}}/images/2015/2015-02-20-eva3.png"/>
 
 Der Earned Value in diesem Beispiel liegt bei 360.000 €. Es zeigt sich also, dass die Ist-Kosten zwar den Plan übersteigen, der Projektfortschritt dem Plan jedoch mittlerweile leicht voraus ist.
 Nur aus diesem Gesamtkontext lassen sich nun Schlussfolgerungen für den Projektstatus und den weiteren Projektverlauf ziehen.
