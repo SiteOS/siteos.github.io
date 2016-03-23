@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Philip Verweyen
-#authorkey: philipverweyen
+authorkey: philipverweyen
 title: "Earned Value Analyse - oder: Wissen statt glauben im Projektcontrolling"
 description: "Teil 2: Quo vadis Projekt? - Projektprognosen mittels Earned Value Analyse"
 categories: Web Projektcontrolling
