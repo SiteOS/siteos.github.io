@@ -6,8 +6,8 @@ title: "Earned Value Analyse - oder: Wissen statt glauben im Projektcontrolling"
 description: "Teil 2: Quo vadis Projekt? - Projektprognosen mittels Earned Value Analyse"
 categories: Web Projektcontrolling
 ---
-In [Teil 1](http://blog.siteos.de/web/projektcontrolling/2015/02/20/Earned-Value-Analyse.html) dieses Artikels wurde gezeigt, wie mit der Earned Value Analyse der aktuelle IST-Stand hinsichtlich Kosten- und Terminplanung eines Projekts ermittelt werden kann.
-In einem nächsten Schritt zeige ich nun, wie sich, basierend auf den Kennzahlen des Projekts, mit Hilfe der EVA Prognosen über den weiteren Projektverlauf stellen lassen.
+In [Teil 1](http://blog.siteos.de/web/projektcontrolling/2015/02/20/Earned-Value-Analyse.html) dieses Artikels wurde gezeigt, wie mit der Earned Value Analyse der aktuelle IST-Stand eines Projekts hinsichtlich Kosten- und Terminplanung ermittelt werden kann.
+In einem nächsten Schritt zeige ich nun, wie sich mit Hilfe der EVA Prognosen über den weiteren Projektverlauf stellen lassen.
 
 Betrachten wir zunächst noch einmal die in [Teil 1](http://blog.siteos.de/web/projektcontrolling/2015/02/20/Earned-Value-Analyse.html) erläuterten EVA-Kennzahlen:
 
@@ -46,6 +46,7 @@ und hieraus abgeleitet:
    - Prognostizierte Restkosten bis zum Projektende
  - Variance at Completion (VAC) = BAC - EAC
    - Prognostizierte Kostenabweichung zum Projektende
+   - Positiv = unter Budget, Negativ = über Budget
  
 <u>Zu beachten</u>: Bei diesen Werten handelt es sich, wie auch bei den Basiskennzahlen, stets um Momentaufnahmen.
 
@@ -65,7 +66,7 @@ Für die Ermittlung des EAC bedarf es einer differenzierten Betrachtung der beob
    - EAC = BAC
    - Dieses Verfahren macht nur Sinn, wenn sichergestellt werden kann, dass die Kostenabweichung bis zum Projektende wieder ausgeglichen wird.
  - Neubewertung der Restkosten. Die Restaufwände werden komplett neu geschätzt
-  - EAC = AC + ETC_geschätzt
+   - EAC = AC + ETC_geschätzt
   
 Betrachten wir nun konkret das in Teil 1 vorgestellte Beispiel. Der Verlauf von PV, AC und EV zeigte sich wie folgt:
 
@@ -85,34 +86,56 @@ Aus der Perspektive des Projektleiters sollten hier die Gründe für die Anstieg
 Wir betrachten das Projekt nun aber als Außenstehende und versuchen eine Erklärung für den Verlauf zu finden.
 
 Der Wert AC steigt zwei mal an und verläuft sonst parallel zum Plan. Das alleine könnte ein Hinweis auf ungeplante Einmalkosten sein. 
-Berechnen wir also den EAC gemäß der entsprechenden Formel:
+Berechnen wir also EAC, ETC und VAC gemäß der entsprechenden Formeln:
 
 {% highlight text %}
 EAC = AC + (BAC - EV) 
          = 480.000 € + (1.200.000 € - 360.000 €)
          = 1.320.000 €
+
+ETC = EAC - AC
+         = 1.320.000 € - 480.000 €
+         = 840.000 €
+ 
+VAC = BAC - EAC
+         = 1.200.000 € - 1.320.000 €
+         = -120.000 €
 {% endhighlight %}
 
-Es werden bis zum Projektende also voraussichtlich noch 840.000 € benötigt (ETC) und wir erwarten eine finale Budgetabweichung von 120.000 € (VAC).
+Es werden bis zum Projektende also voraussichtlich noch 840.000 € benötigt (ETC) und wir erwarten eine finale Budgetüberschreitung von 120.000 € (VAC).
 
-Nun haben wir allerdings für die Interpretation der Kostenabweichung lediglich den Verlauf von AC und PV betrachtet. Und nachdem wir nach dem letzten Anstieg (Monat 6) den weiteren Verlauf der Kosten noch nicht kennen, sollten weitere Szenarien geprüft werden.  
+Nun haben wir allerdings für die Interpretation der Kostenabweichung lediglich den Verlauf von AC und PV betrachtet. Und nachdem wir den weiteren Verlauf der Kosten nach dem letzten Anstieg (Monat 6) noch nicht kennen, sollten weitere Szenarien geprüft werden. 
 Betrachten wir zum Beispiel auch den Verlauf für den EV, so zeigt sich im Zusammenhang mit der letzten Abweichung, dass dieser ebenfalls deutlich ansteigt und letztlich sogar den Planwert überschreitet.
-Ein Erklärung hierfür könnte sein, dass der Projektleiter die dauerhaften Terminabweichungen (EV- PV) der Vormonate durch die Hinzunahme eines weiteren Teammitglieds kompensieren will. Hierdurch steigen entsprechend die Kosten, aber (hoffentlich) auch der EV.   
+Eine Erklärung hierfür könnte sein, dass der Projektleiter die dauerhaften Terminabweichungen (EV- PV) der Vormonate durch die Hinzunahme eines weiteren Teammitglieds kompensieren will. Hierdurch steigen entsprechend die Kosten, aber (hoffentlich) auch der EV.   
 Angesichts der bereits deutlichen Kostenabweichung erscheint eine solche Entscheidung z.B. dann sinnvoll, wenn der Endtermin des Projekts zwingend gehalten werden muss und hierfür eine weitere Kostenüberschreitung in Kauf genommen wird.   
 In diesem Szenario sollte sich zeigen, dass der AC in den Folgemonaten nicht mehr parallel zu PV verläuft - schießlich haben sich die monatlichen Kosten durch das zusätzliche Teammitglied dauerhaft erhöht.
 Es handelt sich nun also um eine Kostenabweichung, die sich auch auf den weiteren Projektverlauf auswirken wird.
 
-Berechnen wir den EAC gemäß der entsprechenden Formel:
+Berechnen wir EAC, ETC und VAC gemäß der entsprechenden Formeln:
 
 {% highlight text %}
 EAC = BAC / CPI
          = 1.200.000 € / 0,75
          = 1.600.000 €
+
+ETC = EAC - AC
+         = 1.600.000 € - 480.000 €
+         = 1.120.000 €
+ 
+VAC = BAC - EAC
+         = 1.200.000 € - 1.600.000 €
+         = -400.000 €
 {% endhighlight %}
 
-Es werden bis zum Projektende also voraussichtlich noch 1.120.000 € benötigt (ETC) und wir erwarten eine finale Budgetabweichung von 400.000 € (VAC).
+Es werden bis zum Projektende also voraussichtlich noch 1.120.000 € benötigt (ETC) und wir erwarten eine finale Budgetüberschreitung von 400.000 € (VAC).
 
-Wir haben nun also einen signifikanten Unterschied in der Projektprognose. Die Korrekte Interpretation der Abweichungen (und somit die Auswahl des passenden Berechnungsverfahrens) ist für die Vorhersage des weiteren Projektfortschritts von großer Bedeutung.
+Wir haben nun also einen signifikanten Unterschied in den Projektprognosen. Hier zeigt sich, dass die korrekte Interpretation der Abweichungen (und somit die Auswahl des passenden Berechnungsverfahrens) für die Vorhersage des weiteren Projektfortschritts von großer Bedeutung ist.
+
+### Fazit
+Die Earned Value Analyse kann ein wertvolles Werkzeug des Projektcontrollings sein. Ihre Aussagekraft steht und fällt jedoch mit der korrekten Anwendung und Bereitstellung der Basiswerte. Bereits bei der Ermittlung des Earned Values (EV) gilt es, das optimalste Verfahren auszuwählen. Dies kann je nach Projekt oder sogar je Arbeitspaket unterschiedlich sein.
+Für die weitergehende Erstellung von Prognosen ist die korrekte Interpretation der festgestellten Abweichungen unerlässlich. Das o.g. Beispiel zeigt deutlich, dass die Auswahl des falschen Verfahrens für die Ermittlung des Estimate at Completion (EAC) zu signifikanten Abweichungen in den prognostizierten Kostenverläufen führen kann.
+
+Problematisch ist der Einsatz der EVA in komplett agilen Projektverläufen (z.B. bei der Nutzung von Scrum). Hier fehlt in der Regel ein klarer Verlauf des Planned Values (PV), da sich die Arbeitspakete im Projektverlauf dynamisch aufbauen. Und auch das Projektbudget (BAC) ist wesentlich flexibler. Speziell für Scrum existiert mit "AgileEVM" eine interessante Interpretation der EVA, jedoch ist die Adaption der EVA auf agile Projektverläufe nach wie vor ein aktuelles Forschungsfeld.
 
 Referenzen/Quellennachweise:
 
