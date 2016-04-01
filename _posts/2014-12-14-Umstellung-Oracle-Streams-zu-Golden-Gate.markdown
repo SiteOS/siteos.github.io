@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Umstellung Orcale Streams zu Golden Gate"
+title: "Umstellung Oracle Streams zu Golden Gate"
 categories: Oracle, Oracle Streams, Golden Gate
 ---
 Höherer Durchsatz bei größeren Datenmengen
