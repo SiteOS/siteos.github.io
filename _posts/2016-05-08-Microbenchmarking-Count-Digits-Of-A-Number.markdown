@@ -8,7 +8,7 @@ categories: Java JMH Benchmarck
 ---
 *After it was mentioned out (thx Fabian Lange) that my benchmark was flawed i have done some additional research on that
 matter and corrected my benchmark. I also add another method to calculate which is mentioned [here](http://stackoverflow.com/questions/1306727/way-to-get-number-of-digits-in-an-int/1308407#1308407).   
-As lesson learned: Use constant data for alle benchmarks and use blackholes or method returns to prevent JIT optimizations like dead code elimination.*
+As lesson learned: Use constant data for all benchmarks and use blackholes or method returns to prevent JIT optimizations like dead code elimination.*
 
 I have been working with [JMH](http://openjdk.java.net/projects/code-tools/jmh) for 4 weeks now and this week we had a 
 small problem [@SiteOS](http://www.siteos.de) for which it is perfect. The question was **what is the fastest way to calculate
