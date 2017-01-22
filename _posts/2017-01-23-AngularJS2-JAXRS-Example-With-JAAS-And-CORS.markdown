@@ -9,8 +9,8 @@ categories: Java JavaEE AngularJS2
 The first part of this post describes how you can get a *JAX-RS* endpoint running with an *AngularJS2* app and
 afterwards made some changes to get it running with basic authentication and *CORS*.
 
-1. The following *JavaEE* backend is pretty standard (except of the definition of **Application** within
-  the resource which is usually done in a seperate class).
+The following *JavaEE* backend is pretty standard (except of the definition of **Application** within
+the resource which is usually done in a seperate class).
 {% highlight java %}
 @Path("/")
 @ApplicationPath("/rest")
@@ -33,7 +33,7 @@ curl http://localhost:8080/blog/rest
 [{"name":"blog"},{"name":"blog2"}]
 {% endhighlight %}
 
-2. This AngularJS2 app is basically a small variation of the ([AngularJS2 Quickstart](https://github.com/angular/quickstart))
+This AngularJS2 app is basically a small variation of the ([AngularJS2 Quickstart](https://github.com/angular/quickstart))
 and only displays the data from the **JAX-RS** endpoint.
 
 {% highlight typescript %}
@@ -66,9 +66,9 @@ export class RestConfig {
 }
 {% endhighlight %}
 
-3. If you now want to use basis authentication you have to do the following changes
+If you now want to use basis authentication you have to do the following changes
 
-a) Define a **Http** header with the necessary information
+Define a **Http** header with the necessary information
 {% highlight typescript %}
 @Injectable()
 export class RestConfig {
@@ -87,7 +87,7 @@ export class RestConfig {
 }
 {% endhighlight %}
 
-b) Pass it to the **Http** request
+Pass it to the **Http** request
 {% highlight typescript %}
 export class AppComponent implements OnInit {
     ..snip..
@@ -100,7 +100,7 @@ export class AppComponent implements OnInit {
 }
 {% endhighlight %}
 
-c) Add a **JavaEE** *CORS* Filter
+Add a **JavaEE** *CORS* Filter
 {% highlight java %}
 @Provider
 public class CORSFilter implements ContainerResponseFilter
@@ -116,7 +116,7 @@ public class CORSFilter implements ContainerResponseFilter
 }
 {% endhighlight %}
 
-d) Omit **Http-Method** *Option* for the secure **JAX-RS** endpoint otherwise you get a 401 for the **preflight** request
+Omit **Http-Method** *Option* for the secure **JAX-RS** endpoint otherwise you get a 401 for the **preflight** request
 {% highlight xml %}
 ...snip...
 <web-resource-collection>
