@@ -25,9 +25,9 @@ Man kann dann VMs in Sekunden von einem Node auf den anderen umziehen per Migrat
 
 Links
 
- - https://pve.proxmox.com/wiki/High_Availability_Cluster_4.x
- - https://www.storitback.de/service/san.html
- - https://pve.proxmox.com/wiki/Main_Page
+ - [https://pve.proxmox.com/wiki/High_Availability_Cluster_4.x](https://pve.proxmox.com/wiki/High_Availability_Cluster_4.x)
+ - [https://www.storitback.de/service/san.html](https://www.storitback.de/service/san.html)
+ - [https://pve.proxmox.com/wiki/Main_Page](https://pve.proxmox.com/wiki/Main_Page)
 
 ## DRBD Version 9
 
@@ -37,7 +37,7 @@ Seit DRBD9 ist es möglich mehr als zwei Nodes zu verwenden. DRBD ist kurz gesag
 
 Es wurde ein drei Node Cluster nach dieser Anleitung auf lokale Partitionen der Nodes aufgesetzt.
 
-https://pve.proxmox.com/wiki/DRBD9
+[https://pve.proxmox.com/wiki/DRBD9](https://pve.proxmox.com/wiki/DRBD9)
 
 ## Eindrücke und Erfahrungen beim Betrieb
 
@@ -45,10 +45,10 @@ DRBD9 ist zurecht noch ein Technologiepreview. Solange an den Hosts nichts verä
 
 Links
 
- - https://de.wikipedia.org/wiki/DRBD
- - https://www.drbd.org/en/doc/users-guide-90
- - https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/
- - https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904
+ - [https://de.wikipedia.org/wiki/DRBD](https://de.wikipedia.org/wiki/DRBD)
+ - [https://www.drbd.org/en/doc/users-guide-90](https://www.drbd.org/en/doc/users-guide-90)
+ - [https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/](https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/)
+ - [https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904](https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904)
 
 ## Ceph Version Jewel
 
@@ -56,7 +56,7 @@ Als Alternative zu DRBD gibt es Ceph als Distributed Storage Lösung, damit ist 
 
 Es wurde ein drei Node Cluster mit der Version Jewel nach dieser Anleitung auf lokale Partitionen der Nodes aufgesetzt:
 
-https://pve.proxmox.com/wiki/Ceph_Server
+[https://pve.proxmox.com/wiki/Ceph_Server](https://pve.proxmox.com/wiki/Ceph_Server)
 
 Sobald keine komplette Disk sondern nur eine Partition zur Verfügung steht, muss zum Erzeugen der OSDs manuell eingegriffen werden. Weiterhin musste bei der Konfiguration des Keyrings manuell eingegriffen werden. Ansonsten lief die Installation relativ problemlos.
 
@@ -66,12 +66,12 @@ Ceph lief nach Reboots und Paketupdates stabil. Das Setzen von speziellen Tunabl
 
 Links
 
- - http://ceph.com/
- - https://www.thomas-krenn.com/de/wiki/Ceph
- - https://de.wikipedia.org/wiki/Ceph
- - http://docs.ceph.com/docs/jewel/start/intro/
- - http://ceph.com/planet/creating-a-ceph-osd-from-a-designated-disk-partition/
- - https://forum.proxmox.com/threads/ceph-rbd-error-rbd-couldnt-connect-to-cluster-500.18319/
+ - [http://ceph.com/](http://ceph.com/)
+ - [https://www.thomas-krenn.com/de/wiki/Ceph](https://www.thomas-krenn.com/de/wiki/Ceph)
+ - [https://de.wikipedia.org/wiki/Ceph](https://de.wikipedia.org/wiki/Ceph)
+ - [http://docs.ceph.com/docs/jewel/start/intro/](http://docs.ceph.com/docs/jewel/start/intro/)
+ - [http://ceph.com/planet/creating-a-ceph-osd-from-a-designated-disk-partition/](http://ceph.com/planet/creating-a-ceph-osd-from-a-designated-disk-partition/)
+ - [https://forum.proxmox.com/threads/ceph-rbd-error-rbd-couldnt-connect-to-cluster-500.18319/](https://forum.proxmox.com/threads/ceph-rbd-error-rbd-couldnt-connect-to-cluster-500.18319/)
 
 ## Vergleich der I/O Performance
 
