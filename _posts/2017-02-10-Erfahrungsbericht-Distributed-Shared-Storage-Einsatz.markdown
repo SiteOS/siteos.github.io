@@ -1,9 +1,9 @@
 ---
 layout: post
-author: Alexander Bischof
+author: Andreas Germeroth
 authorkey: noimagemale
 title: Erfahrungsbericht - Distributed Shared Storage Einsatz
-categories: JS, ES2016, React, Flux, Redux
+categories: Distributed Shared Storage
 ---
 SiteOS hat im Rahmen des RZ Betriebs den Einsatz von Distributed Shared Storage Lösungen erprobt. Eine der Technologien
 könnte nach den Erfahrungen aus der Validierung für einfache Anwendungsszenarien produktiv eingesetzt werden. Allerdings
