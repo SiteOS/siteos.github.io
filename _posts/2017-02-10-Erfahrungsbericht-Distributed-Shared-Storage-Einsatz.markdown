@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Andreas Germeroth
-authorkey: noimagemale
+authorkey: andreasgermeroth
 title: Erfahrungsbericht - Distributed Shared Storage Einsatz
 categories: Distributed Shared Storage
 ---
@@ -29,6 +29,7 @@ Links
  - [https://www.storitback.de/service/san.html](https://www.storitback.de/service/san.html)
  - [https://pve.proxmox.com/wiki/Main_Page](https://pve.proxmox.com/wiki/Main_Page)
 
+
 ## DRBD Version 9
 
 DRBD9 (Distributed Replicated Block Device) in der Version 9 ist in ProxMox 4.X derzeit noch als Technologie-Preview zu sehen und wird nicht für den Produktiveinsatz empfohlen.
@@ -38,6 +39,7 @@ Seit DRBD9 ist es möglich mehr als zwei Nodes zu verwenden. DRBD ist kurz gesag
 Es wurde ein drei Node Cluster nach dieser Anleitung auf lokale Partitionen der Nodes aufgesetzt.
 
 [https://pve.proxmox.com/wiki/DRBD9](https://pve.proxmox.com/wiki/DRBD9)
+
 
 ## Eindrücke und Erfahrungen beim Betrieb
 
@@ -49,6 +51,7 @@ Links
  - [https://www.drbd.org/en/doc/users-guide-90](https://www.drbd.org/en/doc/users-guide-90)
  - [https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/](https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/)
  - [https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904](https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904)
+
 
 ## Ceph Version Jewel
 
@@ -73,6 +76,7 @@ Links
  - [http://ceph.com/planet/creating-a-ceph-osd-from-a-designated-disk-partition/](http://ceph.com/planet/creating-a-ceph-osd-from-a-designated-disk-partition/)
  - [https://forum.proxmox.com/threads/ceph-rbd-error-rbd-couldnt-connect-to-cluster-500.18319/](https://forum.proxmox.com/threads/ceph-rbd-error-rbd-couldnt-connect-to-cluster-500.18319/)
 
+
 ## Vergleich der I/O Performance
 
 Wir haben für die beiden Technologien in einem typischen Anwendungsszenario I/O Faktoren ermittelt und diese mit Referenzmessungen ohne Shared Storage verglichen. Die I/O Faktoren beruhen jeweils auf Messreihen, um die Auswirkungen von Messungenauigkeiten zu reduzieren.
@@ -84,6 +88,7 @@ Wir haben für die beiden Technologien in einem typischen Anwendungsszenario I/O
 | Virtualisierung über LXC Container SSD |    19,39 |
 | Verteilter Storage DRBD HDD KVM (writethrough) |    1,82 |
 | Verteilter Storage CEPH HDD KVM(writethrough) |    1,37 |
+
 
 ### Interpretation der Messergebnisse
 Für Anwendungen mit hohen I/O Anforderungen sind lokale Storages aus SSD-Speichern um Größenordnungen schneller als replizierte Storages. In typischen Workloads kann die Replikation von Daten durch die Applikationen erfolgen, da diese von einem mindestens doppelt so hohem I/O für die eigentlichen Lese- und vor allem Schreiboperationen profitierten – vorausgesetzt, die Anforderungen für die Datenkonsistenz sind nicht auf Transaktionslevel (CAP Theorem). . Analog gilt dies für dedizierte SAN Lösungen. Über optimierte Soft- (Datendeduplikation, …) und Hardware (Fiber, RAID, …) Konfigurationen können diese Unterschiede sicher reduziert werden – der lokale Zugriff erfolgt jedoch immer am schnellsten. SSD vs. HDD? Wir bevorzugen die derzeit noch etwas teurere Variante – die Kennzahlen sprechen Bände…
