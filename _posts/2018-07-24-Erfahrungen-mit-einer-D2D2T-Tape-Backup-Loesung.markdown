@@ -5,8 +5,6 @@ authorkey: thomasreischl
 title: Erfahrungen mit einer D2D2T Tape Backup Lösung
 categories: Operating
 ---
-## Erfahrungen beim Aufsetzen einer Tape Backup Lösung im Rahmen einer D2D2T (Disk-to-Disk-to-Tape) Strategie
-
 In diesem Artikel berichten wir über die Erfahrungen beim Aufsetzen einer Tape Backup Lösung im Rahmen einer D2D2T Strategie. Da fragen sich natürlich einzelne, welche Relevanz das in Zeiten der Cloud hat oder ob Tapes das richtige Mittel für die Speicherung der Daten sind. Daher vorab ein paar einleitende Gedanken zu den Anforderungen und Rahmenbedingungen in diesem Beispiel Projekt.
 
 <p align="center"><img src="{{site.baseurl}}/images/2018/2018-07-24_Artikel_Backup.png"/></p>
