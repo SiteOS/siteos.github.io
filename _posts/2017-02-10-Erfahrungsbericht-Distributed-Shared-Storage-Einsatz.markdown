@@ -52,6 +52,11 @@ Links
  - [https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/](https://forum.proxmox.com/threads/proxmox-4-2-drbd-node-does-not-reconnect-after-reboot-connection-loss.29564/)
  - [https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904](https://forum.proxmox.com/threads/drbd-online-verifiy-all-does-not-work.29639/#post-150904)
 
+### Update 06/2018:
+
+Der Hersteller LINBIT hat uns kontaktiert und dazu folgendes Statement abgegeben:
+
+"DRBD 9 läuft in Kombination mit Proxmox bei zahlreichen Kunden zuverlässig und reibungslos. VMs und Storage lassen sich einfach über eine GUI einrichten. Zudem hat LINBIT DRBD 9 um sinnvolle Features ergänzt, wie zum Beispiel Snapshots. Mit unserem neuesten Produkt Linstor wird das Management von Blockspeichern spielend einfach - also auch für Proxmox Kunden.“
 
 ## Ceph Version Jewel
 
